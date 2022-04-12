@@ -2,6 +2,11 @@
     background-color: #1f1a24;
 }
 
+.nav_padding {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .margin_container {
     margin-top: 32px;
     margin-bottom: 32px;
