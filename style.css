@@ -8,6 +8,7 @@
 }
 .navigation_container {
   width: 100%;
+  margin-top: 60px;
 }
 
 .navigation {
@@ -15,8 +16,16 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 60px;
+  padding: 16px;
   margin: 0 auto;
+}
+
+.rounded_image {
+  border-radius: 50%;
+  max-height: 100%;
+  max-width: 200px;
+  display: block;
+  margin: auto;
 }
 
 .header_text {
@@ -25,7 +34,6 @@
   color: #6B6B6B;
   text-decoration: none;
   line-height: 48px;
-  text-align: center;
 }
 
 .regular_text {
@@ -49,12 +57,23 @@
   color: #6B6B6B;
 }
 
-.navigation_menu {
+.top_menu_container {
   width: 100%;
+  position: fixed;
+  top: 0;
+  background: #FFFFFF;
+  overflow: hidden;
+  min-height: 60px;
+}
+
+.navigation_menu {
+  max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  padding-top: 28px;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 16px 16px;
 }
 
 .navigation_menu_link_text {
@@ -65,10 +84,24 @@
   color: #6B6B6B;
   line-height: 20px;
   font-weight: 400;
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.navigation_menu_link_text:after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #2c3034;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .navigation_menu_link_text:hover {
   color: #A1A1A1;
+}
+
+.navigation_menu_link_text:hover:after {
+  transform: scaleX(1);
 }
 
 .about_container {
@@ -76,40 +109,63 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .about_text_container {
   flex: 1;
-  padding: 0 20px;
-}
-
-.about_text_buttons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.resume_button {
-  display: inline-block;
-  background: #F6F6F6;
-  padding: 16px 24px;
-  text-transform: uppercase;
-  border: none;
-}
-
-.resume_button:hover {
-  background: #FAFAFA;
 }
 
 .about_techs_container {
   flex: 1;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
   gap: 15px;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .about_tech_icon {
-  width: 80px;
+  width: 40px;
+}
+
+.footer_main_container {
+  width: 100%;
+  background: #EEEEEE;
+}
+
+.footer_socials_container {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: start;
+  gap: 20px;
+  padding: 32px;
+}
+
+.social_logo {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.linkedin_logo {
+  background-image: url("./img/linkedin_logo.svg");
+}
+
+.linkedin_logo:hover {
+  background-image: url("./img/linkedin_logo_hover.svg");
+}
+
+.github_logo {
+  background-image: url("./img/github_logo.svg");
+}
+
+.github_logo:hover {
+  background-image: url("./img/github_logo_hover.svg");
 }
 
 @media (max-width: 670px) {
