@@ -7,6 +7,13 @@ $light_grey_text_color: #A1A1A1;
 $container_max_width: 1200px;
 $nav-bar-height: 60px;
 
+
+body{
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 @font-face {
   font-family: "JosefinSans";
   src: url("/JosefinSans_wght.ttf");
@@ -146,7 +153,7 @@ $nav-bar-height: 60px;
 .footer_main_container {
   width: 100%;
   background: #EEEEEE;
-
+  margin-top: auto;
 }
 
 .footer_socials_container {
