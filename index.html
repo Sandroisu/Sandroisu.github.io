@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="actions.js"></script>
 
 <body>
 <nav class="top_menu_container">
     <div class="navigation_menu">
-        <a class="navigation_menu_link_text" href="#">portfolio</a>
-        <a class="navigation_menu_link_text" href="#">about</a>
-        <a class="navigation_menu_link_text" href="#">my family</a>
+        <a class="navigation_menu_link_text" href="index.html">home</a>
+        <a class="navigation_menu_link_text" href="portfolio.html">portfolio</a>
+        <a class="navigation_menu_link_text" href="about.html">about</a>
+        <a class="navigation_menu_link_text" href="family.html">my family</a>
     </div>
 </nav>
 <nav class="navigation_container">
@@ -31,7 +33,7 @@
         <h2 class="header_text">Android and frontend web developer</h2>
         <p class="regular_text">Highly motivated and responsible Mobile Application Developer with about 3 years of
             experience in building Android responsive applications. Constantly busy not only developing new, but also
-            improving existing applications by applying best practices and the latest technologies Experience with
+            improving existing applications by applying best practices and the latest technologies. Experience with
             several APIs for Android applications such as Google Maps, Google Places, VK, etc.</p>
     </div>
     <div class="about_techs_container">
@@ -48,10 +50,29 @@
     </div>
 </div>
 
+<div class="blog_main_container">
+    <div class="blog_container" id="blogContainer" onmouseover="showReadMore()">
+        <span class="blog_title">Blog</span>
+
+        <a href="#" class="blog_element">
+            <div class="blog_empty">
+                <div class="read_more_badge" id="readMore">
+                Read more
+                </div>
+            </div>
+            <div  class="blog_header">
+            Verification of android forms
+            </div>
+        </a>
+
+    </div>
+</div>
+
 <div class="footer_main_container">
     <div class="footer_socials_container">
         <a href="https://www.linkedin.com/in/alexander-slatinin" class="social_logo linkedin_logo"></a>
         <a href="https://github.com/Sandroisu" class="social_logo github_logo"></a>
+        <a href="./img/resume_alex_slatinin.pdf" class="social_logo resume_logo"></a>
     </div>
 </div>
 

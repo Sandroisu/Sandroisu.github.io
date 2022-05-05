@@ -4,16 +4,17 @@ $small_text_size: 14px;
 $small_line_height: 20px;
 $grey_text_color: #6B6B6B;
 $light_grey_text_color: #A1A1A1;
-$container_max_width: 1200px;
+$container_max_width: 1080px;
 $nav-bar-height: 60px;
 
 
-body{
+body {
   height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
+
 @font-face {
   font-family: "JosefinSans";
   src: url("/JosefinSans_wght.ttf");
@@ -24,6 +25,11 @@ body{
   src: url("/NunitoSans.ttf");
 }
 
+.fluid_image {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
 
 .navigation_container {
   width: 100%;
@@ -42,7 +48,7 @@ body{
 .rounded_image {
   border-radius: 50%;
   max-height: 100%;
-  max-width: 200px;
+  max-width: 150px;
   display: block;
   margin: auto;
 }
@@ -126,7 +132,7 @@ body{
 .about_container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: $container_max_width;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -150,6 +156,76 @@ body{
   width: 40px;
 }
 
+.blog_main_container {
+  width: 100%;
+}
+
+.blog_container {
+  max-width: $container_max_width;
+  margin: 64px auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.blog_title {
+  font-family: "JosefinSans", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 48px;
+  color: $grey_text_color;
+  font-weight: 900;
+}
+
+.blog_element {
+  display: flex;
+  flex-flow: column;
+  padding: 0 46px 46px 46px;
+  border: 1px solid $grey_text_color;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.blog_empty{
+  width: 100%;
+  display: flex;
+  height: 46px;
+  justify-content: end;
+}
+
+.read_more_badge {
+  font-family: "JosefinSans", serif;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  font-size: $small_text_size;
+  background: #000000;
+  color: #FFFFFF;
+  font-weight: 900;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.read_more_badge_open {
+  height: 30px;
+  padding: 8px;
+
+}
+
+.read_more_badge_close {
+  height: 0;
+  padding: 0;
+}
+
+.blog_header {
+  font-family: "JosefinSans", serif;
+  margin: 60px;
+  font-size: 44px;
+  font-weight: 700;
+}
+
 .footer_main_container {
   width: 100%;
   background: #EEEEEE;
@@ -159,6 +235,7 @@ body{
 .footer_socials_container {
   max-width: $container_max_width;
   display: flex;
+  flex-flow: row wrap;
   margin: 0 auto;
   justify-content: start;
   gap: 20px;
@@ -170,7 +247,7 @@ body{
   height: 32px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 32px 32px;
 }
 
 .linkedin_logo {
@@ -190,6 +267,57 @@ body{
 }
 
 
+.resume_logo {
+  background-image: url("./img/resume_logo.svg");
+}
+
+.resume_logo:hover {
+  background-image: url("./img/resume_logo_hover.svg");
+}
+
+
+/*profile styles*/
+
+.mobile_examples_main {
+  width: 100%;
+  margin-top: $nav-bar-height;
+}
+
+.mobile_examples {
+  max-width: $container_max_width;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 32px;
+}
+
+.working_example {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.explanation_text {
+  padding-left: 16px;
+  max-width: 500px;
+}
+
+.wallet_explanation_text {
+  max-width: 250px;
+}
+
+.wallet_container {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 32px;
+  gap: 16px;
+}
+
+.mobile_img {
+  max-width: 250px;
+}
+
+
 @media (max-width: 670px) {
   .about_container {
     flex-flow: column;
@@ -199,5 +327,15 @@ body{
 @media (max-width: 375px) {
   .about_container {
     flex-flow: column;
+  }
+
+  .navigation_container {
+    margin-top: 96px;
+  }
+}
+
+@media (max-width: 196px) {
+  .read_more_badge_open {
+    width: 0;
   }
 }
