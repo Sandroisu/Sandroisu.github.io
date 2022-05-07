@@ -168,8 +168,12 @@ body {
   flex-flow: column;
   padding: 0 46px 46px 46px;
   border: 1px solid #6B6B6B;
+  overflow: hidden;
+  background: #314964;
   border-radius: 6px;
+  color: #FFFFFF;
   text-decoration: none;
+  text-align: center;
 }
 
 .blog_empty {
@@ -206,10 +210,43 @@ body {
 }
 
 .blog_header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   font-family: "JosefinSans", serif;
   margin: 60px;
-  font-size: 44px;
+}
+
+.blog_top_text {
+  font-size: 28px;
+  font-weight: 900;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+
+.blog_bottom_text {
+  font-size: 18px;
   font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  transition: 0.5s;
+}
+
+.blog_logo {
+  width: 64px;
+  height: 64px;
+}
+
+.blog_top_up {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.blog_bottom_down {
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 
 .footer_main_container {
