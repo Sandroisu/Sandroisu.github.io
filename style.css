@@ -41,6 +41,19 @@ body {
   color: #A1A1A1;
 }
 
+.nav_bar_margin {
+  margin-top: 60px;
+}
+
+.parent_container {
+  width: 100%;
+}
+
+.first_child_container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .paragraph_text {
   font-family: "NunitoSans", sans-serif;
   font-size: 18px;
@@ -50,7 +63,6 @@ body {
 
 .navigation_container {
   width: 100%;
-  margin-top: 60px;
 }
 
 .navigation {
@@ -89,12 +101,10 @@ body {
 }
 
 .navigation_menu {
-  max-width: 1080px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   gap: 20px;
-  margin: 0 auto;
   padding: 16px 16px;
 }
 
