@@ -5,7 +5,7 @@ $small_line_height: 24px;
 $grey_text_color: #6B6B6B;
 $light_grey_text_color: #A1A1A1;
 $container_max_width: 1080px;
-$nav-bar_height: 60px;
+$nav_bar_height: 60px;
 
 @font-face {
   font-family: "JosefinSans";
@@ -55,7 +55,7 @@ body {
 }
 
 .nav_bar_margin {
-  margin-top: $nav-bar_height;
+  margin-top: $nav_bar_height;
 }
 
 .parent_container {
@@ -112,7 +112,7 @@ body {
   top: 0;
   background: #FFFFFF;
   overflow: hidden;
-  min-height: $nav-bar_height;
+  min-height: $nav_bar_height;
 }
 
 .navigation_menu {
@@ -337,7 +337,7 @@ body {
 
 .mobile_examples_main {
   width: 100%;
-  margin-top: $nav-bar_height;
+  margin-top: $nav_bar_height;
 }
 
 .mobile_examples {
