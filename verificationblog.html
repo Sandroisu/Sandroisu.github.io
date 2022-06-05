@@ -17,14 +17,34 @@
         <a class="navigation_menu_link_text" href="about.html">about</a>
     </div>
 </nav>
-<div class="parent_container nav_bar_margin">
+<header class="parent_container nav_bar_margin">
     <div class="first_child_container">
+        <h1 class="gray_text header_text">ANDROID FORM VERIFICATION</h1>
         <p class="gray_text paragraph_text">
             This article will be helpful for those who build android applications that have forms and need to validate
             them.
+            Many of those who develop applications on Android have to deal with forms - screens with many fields that
+            must be filled in and somehow verified.
+            Moreover, there can be a lot of fields, and the customer wants us to not only highlight fields with errors,
+            but also make the screen automatically scroll to the topmost error.
+            Recently I came across such a requirement and decided to share how I implemented it. Java code
+            implementation, since I think that it will not be a problem for anyone to translate it into Kotlin,
+            especially since Android Studio helps a lot with this.
         </p>
-
+        <img src="./img/validation_img.png" alt="verification image">
+        <p class="gray_text paragraph_text">
+            The first thing we need to do is create an interface that will represent the field that needs to be checked
+            after clicking the "Save/Submit" button.
+        </p>
+        <img src="./img/field_interface.png" alt="field interface image">
+        <p class="paragraph_text gray_text">
+            We will give it a View as a parameter, it will have a <code>validate()</code> method in which the validation
+            procedure will
+            take place and two methods regarding the order of the View on the screen<br>
+            Next we need to create a class that will keep list of elements to be checked in right order.
+        </p>
+        <img src="./img/validation_manager.png" alt="validation manager image">
     </div>
-</div>
+</header>
 </body>
 </html>
